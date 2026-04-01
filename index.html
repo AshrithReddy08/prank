@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>💖 Something Special For You...</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,500&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ========== PAGE 1: PROPOSAL ========== -->
+  <div id="page-proposal" class="page active">
+
+    <!-- Floating hearts background layer -->
+    <div class="hearts-bg" id="heartsBg"></div>
+
+    <!-- Firefly / sparkle layer -->
+    <div class="sparkles" id="sparkles"></div>
+
+    <!-- Rose petals layer -->
+    <div class="petals-layer" id="petalsLayer"></div>
+
+    <!-- Central card -->
+    <div class="proposal-card" id="proposalCard">
+      <div class="card-glow"></div>
+
+      <div class="card-top-deco">
+        <span class="big-heart">💗</span>
+        <span class="stars-deco">✨ ✨ ✨</span>
+      </div>
+
+      <h1 class="proposal-title">My Dearest...</h1>
+
+      <div class="divider-line">
+        <span>❧</span>
+      </div>
+
+      <p class="proposal-text">
+        Every heartbeat whispers your name.<br/>
+        Every sunrise reminds me of your smile.<br/>
+        <em>Will you be my forever?</em>
+      </p>
+
+      <p class="proposal-sub">
+        💌 &nbsp;You are the poetry my heart has always tried to write.&nbsp; 💌
+      </p>
+
+      <div class="love-confession">
+        <div class="love-main-row">
+          <span class="love-wings">🕊️</span>
+          <span class="love-words">I love you.</span>
+          <span class="love-wings">🕊️</span>
+        </div>
+        <p class="love-detail">
+          Not just today. Not just when it's easy.<br/>
+          <em>Always. Endlessly. Completely — you.</em>
+        </p>
+      </div>
+
+      <div class="btn-row" id="btnRow">
+        <button class="btn-yes" id="btnYes" onclick="handleYes()">
+          <span class="btn-icon">💖</span> Yes!
+        </button>
+        <button class="btn-no" id="btnNo">
+          <span class="btn-icon">🙈</span> No
+        </button>
+      </div>
+
+      <p class="hint-text">Choose wisely, love... 😏</p>
+    </div>
+
+  </div>
+
+
+  <!-- ========== PAGE 2: YES PAGE ========== -->
+  <div id="page-yes" class="page">
+
+    <div class="yes-bg-anim" id="yesBgAnim"></div>
+    <div class="yes-sparkles" id="yesSparkles"></div>
+
+    <!-- Ambient orbs instead of falling roses -->
+    <div class="orbs-layer" id="orbsLayer"></div>
+
+    <div class="yes-card" id="yesCard">
+      <div class="yes-card-shimmer"></div>
+
+      <div class="yes-top-deco">
+        <span class="yes-crown">👑</span>
+      </div>
+
+      <h1 class="yes-title">Congratulations</h1>
+      <h2 class="yes-subtitle">My Dear Love 💕</h2>
+
+      <p class="yes-poem">
+        You said YES and the universe sang.<br/>
+        Stars danced, roses bloomed,<br/>
+        and my heart finally found its home — <em>you.</em>
+      </p>
+
+      <!-- Gift Box -->
+      <div class="gift-wrapper" id="giftWrapper" onclick="openGift()">
+        <div class="gift-box" id="giftBox">
+          <div class="gift-lid" id="giftLid">
+            <div class="lid-ribbon"></div>
+          </div>
+          <div class="gift-body">
+            <div class="gift-ribbon-v"></div>
+            <div class="gift-ribbon-h"></div>
+          </div>
+        </div>
+        <p class="gift-hint">🎁 Tap to open your gift...</p>
+      </div>
+
+      <!-- Hidden message -->
+      <div class="final-msg" id="finalMsg">
+        <div class="msg-burst">🎉</div>
+        <h2 class="msg-title">Finally...</h2>
+        <p class="msg-body">April Fool! Ayinav po 😂🤣</p>
+        <div class="confetti-text">🎊🎊🎊</div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
